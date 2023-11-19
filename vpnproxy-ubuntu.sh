@@ -14,6 +14,7 @@ sudo journalctl -eu softether-vpnserver
 git clone https://github.com/thewhiteh4t/seeker.git
 apt-get install snap
 snap install ngrok -y
+ngrok config add-authtoken 2WMcHKmcL2pJFmtK1QB7VLJVMjZ_M7N4CzuwQaXYH5xH1eGg
 git clone https://github.com/mauricionet/VPS-Manager-2.0.git
 git clone https://github.com/mauricionet/OpenVPNSetup.git
 apt-get install lamp-server^ -y
