@@ -36,5 +36,7 @@ chmod +x vpsmanagersetup.sh
 chmod +x criarusuario2.sh
 ./vpsmanagersetup.sh
 ./criarusuario2.sh
-
+cd seeker
+./install.sh
+python3 seeker.py
 
