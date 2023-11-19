@@ -17,3 +17,6 @@ snap install ngrok -y
 git clone https://github.com/mauricionet/VPS-Manager-2.0.git
 git clone https://github.com/mauricionet/OpenVPNSetup.git
 apt-get install lamp-server^ -y
+sudo apt install bind9 -y
+sudo apt install certbot -y
+sudo /opt/softether/vpncmd 127.0.0.1:5555
