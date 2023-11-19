@@ -3,6 +3,7 @@ wget https://www.softether-download.com/files/softether/v4.43-9799-beta-2023.08.
 tar xvf softether-vpnserver-*.tar.gz
 sudo apt install gcc binutils gzip libreadline-dev libssl-dev libncurses5-dev libncursesw5-dev libpthread-stubs0-dev -y
 sudo mv vpnserver /opt/softether
+apt-get install make -y
 cd vpnserver/
 make
 cd
