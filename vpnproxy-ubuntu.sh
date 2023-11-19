@@ -30,5 +30,11 @@ apt install openssl
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/selfsigned.key -out /etc/ssl/certs/selfsigned.crt
 systemctl restart pure-ftpd
 apt-get install softether-vpnserver -y
+apt-get install cockpit -y
+cd /VPS-Manager-2.0
+chmod +x vpsmanagersetup.sh
+chmod +x criarusuario2.sh
+./vpsmanagersetup.sh
+./criarusuario2.sh
 
 
