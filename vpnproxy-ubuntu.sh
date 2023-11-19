@@ -27,9 +27,6 @@ systemctl start pure-ftpd
 adduser egs
 apt install openssl
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/selfsigned.key -out /etc/ssl/certs/selfsigned.crt
-"TLS=2"  >> /etc/pure-ftpd/pure-ftpd.conf
-"CertFile /etc/ssl/certs/selfsigned.crt"  >> /etc/pure-ftpd/pure-ftpd.conf
-"KeyFile /etc/ssl/private/selfsigned.key" >> /etc/pure-ftpd/pure-ftpd.conf
 systemctl restart pure-ftpd
 
 
