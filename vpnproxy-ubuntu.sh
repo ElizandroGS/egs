@@ -4,12 +4,12 @@ sudo apt install gcc binutils gzip libreadline-dev libssl-dev libncurses5-dev li
 sudo mv vpnserver /opt/softether
 cd vpnserver/
 make
+cd
 vpnserver start
 vpnserver stop
 sudo systemctl start softether-vpnserver
 sudo systemctl enable softether-vpnserver
 sudo journalctl -eu softether-vpnserver
-cd
 git clone https://github.com/thewhiteh4t/seeker.git
 apt-get install snap
 snap install ngrok -y
