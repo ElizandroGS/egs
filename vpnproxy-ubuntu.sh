@@ -21,3 +21,15 @@ apt-get install lamp-server^ -y
 sudo apt install bind9 -y
 sudo apt install certbot -y
 sudo /opt/softether/vpncmd 127.0.0.1:5555
+apt install pure-ftpd -y
+systemctl enable pure-ftpd
+systemctl start pure-ftpd
+adduser egs
+apt install openssl
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/selfsigned.key -out /etc/ssl/certs/selfsigned.crt
+echo"TLS=2
+CertFile /etc/ssl/certs/selfsigned.crt
+KeyFile /etc/ssl/private/selfsigned.key" >> /etc/pure-ftpd/pure-ftpd.conf
+systemctl restart pure-ftpd
+
+
